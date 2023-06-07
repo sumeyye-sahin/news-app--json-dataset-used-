@@ -9,7 +9,7 @@ const App =()=>{
   return(
     <View style={styles.container}>
         
-        <Text style={styles.mainTitle}>PATIKASTORE</Text>
+        <Text style={styles.mainTitle}> PATIKASTORE</Text>
         <TextInput 
         style={styles.textInput} 
         onChangeText={onChangeText}
@@ -21,7 +21,8 @@ const App =()=>{
         > 
         </TextInput>
         
-        <FlatList
+
+                  <FlatList
          
             numColumns={2 }
             keyExtractor={(item)=> item.id.toString()}
@@ -31,8 +32,10 @@ const App =()=>{
             
             
         />
+        </View>
+
         
-    </View>
+   
   );
 }
 
@@ -41,12 +44,14 @@ const styles = StyleSheet.create(
     container:{
       backgroundColor:'white',
       flex:1,
+      paddingRight:4,
 
     },
     mainTitle:{
       fontSize:40,
       fontWeight:'bold',
       color:"purple",
+      paddingTop:15,
     },
     textInput:{
       height: 50,
@@ -60,6 +65,7 @@ const styles = StyleSheet.create(
 
 
     },
+
 
 }
 );

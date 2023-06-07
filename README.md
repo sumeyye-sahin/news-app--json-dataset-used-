@@ -1,4 +1,4 @@
-# react-native example --> news app. (a dataset in json file is used) 
+# react-native example --> patikaStore app. (a dataset in json file is used) 
 
 ----------------------------------------------------------------------------------------------------------
 
